@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+    <title>ABC Inmobiliaria</title>
+
+    <link rel="stylesheet" href="Proyecto01/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="Proyecto01/styles/kendo.default.min.css" />
+    <link rel="stylesheet" href="Proyecto01/styles/kendo.default.mobile.min.css" />
+
+    <link rel="stylesheet" href="Proyecto01/styles/kendo.default-v2.min.css" />
+
+    <script src="Proyecto01/js/jquery.min.js"></script>
+    <script src="Proyecto01/js/kendo.all.min.js"></script>
+</head>
+
+<body>
+    <header id="header-primary">
+        <a href="index.html" class="logo">
+            <figure>
+                <img src="img/logo-inmo.png" alt="" />
+            </figure>
+            <h2>ABC</h2>
+        </a>
+        <nav class="menu">
+            <ul id="menu-nav">
+                <li class="nav-item">
+                    <a>Propiedades</a>
+                    <ul>
+                        <li>
+                            <a href="casas.html">Casas</a>
+                        </li>
+                        <li>
+                            <a href="departamentos.html">Departamentos</a>
+                        </li>
+                        <li>
+                            <a href="quintas.html">Quintas</a>
+                        </li>
+                        <li>
+                            <a href="cocheras.html">Cocheras</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Sobre nosotros</a>
+                </li>
+            </ul>
+            <script>
+                $(document).ready(function () {
+                    $("#menu-nav").kendoMenu();
+                });
+            </script>
+        </nav>
+    </header>
+    <main>
+        <section class="block-home" id="primera-vista">
+            <div class="video">
+                <video src="video/Drone - 24145.mp4" muted autoplay loop></video>
+            </div>
+            <div class="capa-video"></div>
+            <div class="title-primary">
+                <h1>ABC Cumpliendo Sueños</h1>
+                <p>Tu hogar es un pilar fundamental en tu vida. Nosotros te ayudamos a encontrar un lugar para tu
+                    negocio que se sienta como estar en casa. Tanto si lo que quieres es comprar como vender, has
+                    llegado al lugar correcto. ​Estamos aquí para ayudarte a ti y a tu negocio a encontrar la propiedad
+                    perfecta. </p>
+            </div>
+        </section>
+        <section class="block-home" id="segunda-vista">
+
+            <h2>Propiedades</h2>
+
+            <article class="propiedades">
+                <h3>Casas</h3>
+                <a href="casas.html">
+                    <figure>
+                        <img src="img/casa.jpg" alt="">
+                    </figure>
+                </a>
+            </article>
+            <article class="propiedades">
+                <h3>Departamentos</h3>
+                <a href="departamentos.html">
+                    <figure>
+                        <img src="img/departamento.jpg" alt="">
+                    </figure>
+                </a>
+            </article>
+            <article class="propiedades">
+                <h3>Quintas</h3>
+                <a href="quintas.html">
+                    <figure>
+                        <img src="img/quinta.jpg" alt="">
+                    </figure>
+                </a>
+            </article>
+            <article class="propiedades">
+                <h3>Cocheras</h3>
+                <a href="cocheras.html">
+                    <figure>
+                        <img src="img/cochera.jpg" alt="">
+                    </figure>
+                </a>
+            </article>
+        </section>
+        <section id="ubicacion">
+            <h3>Encuéntranos aquí</h3>
+            <iframe id="gmap"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.1547889487065!2d-60.6409949842769!3d-32.9469224792333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab19c069fc8b%3A0xd121fa9d0a516001!2sCMN%2C%20Sarmiento%20846%2C%20S2000%20Rosario%2C%20Provincia%20de%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1601908939249!5m2!1ses-419!2sar"
+                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <footer id="footer-primary">
+                <div id="nav-footer">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <h5>ABC <br> Inmobiliaria</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="casas.html">Casas</a>
+                        </li>
+                        <li>
+                            <a href="departamentos.html">Departamentos</a>
+                        </li>
+                        <li>
+                            <a href="quintas.html">Quintas</a>
+                        </li>
+                        <li>
+                            <a href="cocheras.html">Cocheras</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="redes-sociales">
+                    <a href="http://www.facebook.com" class="icon-social" target="_blank">F</a>
+                    <a href="http://www.instagram.com" class="icon-social" target="_blank">I</a>
+                    <a href="http://www.linkedin.com" class="icon-social" target="_blank">L</a>
+                    <a href="http://www.twitter.com" class="icon-social" target="_blank">T</a>
+                </div>
+                <div id="calendario">
+                    <div class="demo-section k-content" style="text-align: center;">
+                        <div id="calendar"></div>
+                    </div>
+                    <script>
+                        $(document).ready(function () {
+                            $("#calendario").kendoCalendar();
+                        });
+                    </script>
+                </div>
+            </footer>
+        </section>
+        <section id="clima">
+            <h3 id="ciudad"></h3>
+            
+        </section>
+    </main>
+
+    <script>
+
+
+        const header = document.querySelector('header');
+        const section = document.querySelector('section');
+
+        const requestURL = 'https://ws.smn.gob.ar/map_items/forecast/1';
+        const request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+
+
+        request.onload = function () {
+            const localidades = request.response;
+            for (var i = 0; i <= 200; i++) {
+                if (localidades[i]['name'] = "Rosario") {
+
+                    var nombre = localidades[i]['name'];
+
+                    $('#ciudad').html(nombre);
+
+                }
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

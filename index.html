@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+    <title>ABC Inmobiliaria</title>
+
+    <link rel="stylesheet" href="Proyecto01/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="Proyecto01/styles/kendo.default.min.css" />
+    <link rel="stylesheet" href="Proyecto01/styles/kendo.default.mobile.min.css" />
+
+    <link rel="stylesheet" href="Proyecto01/styles/kendo.default-v2.min.css" />
+
+    <script src="Proyecto01/js/jquery.min.js"></script>
+    <script src="Proyecto01/js/kendo.all.min.js"></script>
+</head>
+
+<body>
+
+    <script>
+        $.getJSON("estado.json", function (data) {
+            const estado = data.estado;
+
+            if (estado === 'construccion') {
+                $("<figure><img src='img/sitioconstruccion.jpg'></figure>").appendTo("body");
+            } else {
+                window.location.replace("home.html");
+            }
+
+        });
+    </script>
+</body>
+
+</html>
