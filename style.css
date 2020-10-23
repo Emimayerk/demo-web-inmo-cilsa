@@ -13,11 +13,11 @@ header#header-primary {
     align-items: normal;
     padding: 1rem 5rem 1rem 5rem;
     position: fixed;
-    background: #ffffff;
+    background: #f6f6f6;
     flex-direction: row;
     justify-content: space-between;
     z-index: 1;
-    transition-duration: 500ms;
+    transition-duration: 650ms;
 }
 
 .logo {

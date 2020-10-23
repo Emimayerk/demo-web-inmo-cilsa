@@ -164,35 +164,6 @@
             
         </section>
     </main>
-
-    <script>
-
-
-        const header = document.querySelector('header');
-        const section = document.querySelector('section');
-
-        const requestURL = 'https://ws.smn.gob.ar/map_items/forecast/1';
-        const request = new XMLHttpRequest();
-        request.open('GET', requestURL);
-        request.responseType = 'json';
-        request.send();
-
-
-        request.onload = function () {
-            const localidades = request.response;
-            for (var i = 0; i <= 200; i++) {
-                if (localidades[i]['name'] = "Rosario") {
-
-                    var nombre = localidades[i]['name'];
-
-                    $('#ciudad').html(nombre);
-
-                }
-            }
-
-        }
-
-    </script>
 </body>
 
 </html>
