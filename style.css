@@ -262,7 +262,8 @@ div#redes-sociales {
 }
 
 div#redes-sociales a.icon-social {
-    margin-left: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     border-radius: 100px;
     border: solid 1.5px rgb(0, 0, 0);
 }
@@ -311,6 +312,25 @@ a.icon-social:nth-child(4) {
     
 }
 
+
+#newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#newsletter ul li {
+    list-style: none;
+    padding: 0.5rem;
+    font-weight: 600;
+}
+
+#newsletter ul li input {
+    width: 250px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
 
 
 
