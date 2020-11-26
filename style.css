@@ -334,5 +334,14 @@ a.icon-social:nth-child(4) {
 
 
 
+/* CALENDARIO */
+
+.calendario h4 {
+    margin: 2rem;
+    font-family: "open sans";
+    font-size: 25px;
+    font-weight: 300;
+}
+
 
 
